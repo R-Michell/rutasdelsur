@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #970490, #bbbebe, #000000);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes rotateBorder {
+    0% {
+        box-shadow: 0 0 10px rgb(231, 9, 194);
+    }
+    50% {
+        box-shadow: 0 0 20px rgb(30, 231, 4);
+    }
+    100% {
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+}
+
+.form-container {
+    background: none;
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    border: 1px solid rgb(141, 37, 167);
+    animation: rotateBorder 2s infinite;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: aliceblue;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #9c26eb;
+    border-radius: 4px;
+    
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    color: #fff;
+    border: 2px solid #13c1d8;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    transition: color 0.4s;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg, #1c9de7, #16dbf5);
+    transition: all 0.75s;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.logom{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    position:relative;
+    margin: 5px;
+    border-radius: 15%;
+}

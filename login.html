@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="logom">
+                <img src="images/WhatsApp_Image_2024-07-24_at_07.25.00-removebg-preview.png" alt="Mi Logo" class="logo">
+            </div>
+            <h2>Login</h2>
+            <form action="conexion.php" method="post">
+                <div class="form-group">
+                    <label for="admin-usuario">Usuario:</label>
+                    <input type="text" id="admin-usuario" name="admin-usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="admin-clave">Clave:</label>
+                    <input type="password" id="admin-clave" name="admin-clave" required>
+                </div>
+                <button type="submit" class="btn">Ingresar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

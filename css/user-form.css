@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #7a20bb; /* Morado oscuro */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header .logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.user-form {
+    background: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #a14ae0; /* Morado claro */
+}
+
+.user-form input,
+.user-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-form input:focus,
+.user-form textarea:focus {
+    border-color: #800080; /* Morado */
+}
+
+.user-form button {
+    background-color: #800080; /* Morado */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-form button:hover {
+    background-color: #9932cc; /* Morado medio */
+}
+
